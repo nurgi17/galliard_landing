@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("../fonts/SF-Pro-Display-Medium.otf");
+  src: url("../fonts/SF-Pro-Display-Bold.otf");
+  src: url("../fonts/SF-Pro-Display-Bold.otf");
+  font-weight: 500;
+  font-style: normal; }
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; }
+
+body {
+  background-color: #011013;
+  border: none;
+  opacity: 100%;
+  font-size: 20px;
+  color: #FFFFFF;
+  font-weight: medium;
+  font-family: "SF Pro Display"; }
+
+header {
+  background: url("../img/back1.png") no-repeat center center fixed;
+  background-size: cover; }
+
+.navbar-dark .navbar-nav .nav-link {
+  padding: 0 30px;
+  background-color: none;
+  border: none;
+  opacity: 100%;
+  font-size: 0.9em;
+  color: #FFFFFF;
+  font-weight: medium;
+  font-family: "SF Pro Display"; }
+
+.navbar-collapse {
+  text-align: center; }
+
+#first-offer {
+  padding-top: 4.28%; }
+  #first-offer h4 {
+    font-size: 0.9em; }
+  #first-offer p {
+    background-color: none;
+    border: none;
+    opacity: 100%;
+    font-size: 0.6em;
+    color: #81898A;
+    font-weight: medium;
+    font-family: "SF Pro Display"; }
+
+#ideal-coffee {
+  padding-bottom: 8%;
+  margin: 7.5% 0 0 5.5%;
+  max-width: 780px; }
+  #ideal-coffee h1 {
+    font-size: 4.5em; }
+  #ideal-coffee p {
+    max-width: 495px;
+    background-color: none;
+    border: none;
+    opacity: 100%;
+    font-size: 1.15em;
+    color: #81898A;
+    font-weight: medium;
+    font-family: "SF Pro Display"; }
+  #ideal-coffee .btn-warning {
+    background-color: #E5A042;
+    border: 1px solid #E5A042;
+    opacity: 100%;
+    font-size: none;
+    color: #FFFFFF;
+    font-weight: medium;
+    font-family: "SF Pro Display"; }
+  #ideal-coffee .btn-warning:hover {
+    background-color: #e39731;
+    border: 1px solid #e39731;
+    opacity: 100%;
+    font-size: none;
+    color: #FFFFFF;
+    font-weight: medium;
+    font-family: "SF Pro Display"; }
+
+@media (max-width: 576px) {
+  #ideal-coffee {
+    max-width: 100%;
+    text-align: center; }
+    #ideal-coffee h1 {
+      font-size: 15vw; }
+    #ideal-coffee .btn-warning {
+      display: block;
+      margin: 0 auto; }
+  #best-coffee,
+  #barista {
+    text-align: center; }
+    #best-coffee .under,
+    #barista .under {
+      display: block;
+      margin: 0 auto; }
+  #contact-us form input {
+    width: 85%;
+    padding-bottom: 100px; }
+  footer #ddd {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-line-pack: center;
+    align-content: center; }
+    footer #ddd #icons {
+      -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center; } }
+
+#black1 {
+  background-color: #1C1C1C; }
+
+#best-coffee,
+#barista {
+  margin-left: 5.5%; }
+  #best-coffee h4,
+  #barista h4 {
+    background-color: none;
+    border: none;
+    opacity: 100%;
+    font-size: 1.3em;
+    color: #81898A;
+    font-weight: bold;
+    font-family: "SF Pro Display"; }
+  #best-coffee h1,
+  #barista h1 {
+    background-color: none;
+    border: none;
+    opacity: 100%;
+    font-size: 3.2em;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-family: "SF Pro Display"; }
+  #best-coffee p,
+  #barista p {
+    max-width: 542px;
+    background-color: none;
+    border: none;
+    opacity: 100%;
+    font-size: 1.15em;
+    color: #FFFFFF;
+    font-weight: medium;
+    font-family: "SF Pro Display"; }
+  #best-coffee .under,
+  #barista .under {
+    border-bottom: 7px solid #E5A042; }
+
+#best-coffee .under {
+  width: 95px; }
+
+#barista {
+  margin-right: 5.4%; }
+  #barista .under {
+    width: 77px; }
+
+#coffee-types,
+#videos {
+  margin-left: 5%;
+  margin-right: 5%; }
+  #coffee-types #crahic,
+  #videos #crahic {
+    background: url("../img/back11.png") no-repeat center center;
+    background-size: cover; }
+  #coffee-types #essential,
+  #videos #essential {
+    background: url("../img/back22.png") no-repeat center center;
+    background-size: cover; }
+  #coffee-types #marcony,
+  #videos #marcony {
+    background: url("../img/back33.png") no-repeat center center;
+    background-size: cover; }
+  #coffee-types #crahic,
+  #coffee-types #essential,
+  #coffee-types #marcony,
+  #videos #crahic,
+  #videos #essential,
+  #videos #marcony {
+    text-align: center;
+    max-width: 400px; }
+    #coffee-types #crahic h6,
+    #coffee-types #essential h6,
+    #coffee-types #marcony h6,
+    #videos #crahic h6,
+    #videos #essential h6,
+    #videos #marcony h6 {
+      background-color: none;
+      border: none;
+      opacity: 100%;
+      font-size: 0.65em;
+      color: #81898A;
+      font-weight: bolder;
+      font-family: "SF Pro Display"; }
+    #coffee-types #crahic h2,
+    #coffee-types #essential h2,
+    #coffee-types #marcony h2,
+    #videos #crahic h2,
+    #videos #essential h2,
+    #videos #marcony h2 {
+      background-color: none;
+      border: none;
+      opacity: 100%;
+      font-size: 1.7em;
+      color: #FFFFFF;
+      font-weight: bolder;
+      font-family: "SF Pro Display"; }
+    #coffee-types #crahic p,
+    #coffee-types #essential p,
+    #coffee-types #marcony p,
+    #videos #crahic p,
+    #videos #essential p,
+    #videos #marcony p {
+      background-color: none;
+      border: none;
+      opacity: 100%;
+      font-size: 0.9em;
+      color: #FFFFFF;
+      font-weight: medium;
+      font-family: "SF Pro Display"; }
+
+#contact-us form h2 {
+  font-size: 2em; }
+
+#contact-us form input {
+  background-color: #011013;
+  border: none;
+  opacity: 100%;
+  font-size: 1em;
+  color: #81898A;
+  font-weight: medium;
+  font-family: "SF Pro Display";
+  text-align: center;
+  padding-left: 25px;
+  border-bottom: 2px solid #81898A;
+  padding-bottom: 5px; }
+
+#contact-us form i {
+  padding-bottom: 10px;
+  color: #E5A042;
+  border-bottom: 2px solid #81898A; }
+
+footer #ddd a {
+  color: #81898A; }
+
+footer #ddd a:hover {
+  text-decoration: none; }
+
+footer #ddd p {
+  font-size: 0.7em;
+  color: #81898A; }
+
+footer #ddd #icons a:hover {
+  color: #FFFFFF; }

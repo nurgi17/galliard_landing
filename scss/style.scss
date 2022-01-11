@@ -1,0 +1,267 @@
+@import "variables";
+@import "mixins";
+
+// General Settngs  –––––––––––––––––––––––––––––––––––––––––––––––––––––
+* {
+    @include mp;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: $font;
+    src: url('../fonts/SF-Pro-Display-Medium.otf');
+    src: url('../fonts/SF-Pro-Display-Bold.otf');
+    src: url('../fonts/SF-Pro-Display-Bold.otf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+html,
+body {
+    @include mp;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    @include general($black, none, 100%, 20px, $white, medium, $font);
+}
+
+// General Settngs  END –––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// Header & Navbar –––––––––––––––––––––––––––––––––––––––––––––––––––––
+header {
+    background: url("../img/back1.png") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    padding: 0 30px;
+    @include general(none, none, 100%, 0.9em, $white, medium, $font);
+}
+
+.navbar-collapse {
+    text-align: center;
+}
+
+#first-offer {
+    padding-top: 4.28%;
+
+    h4 {
+        font-size: 0.9em;
+    }
+
+    p {
+        @include general(none, none, 100%, 0.6em, $grey, medium, $font);
+    }
+}
+
+#ideal-coffee {
+    padding-bottom: 8%;
+    margin: 7.5% 0 0 5.5%;
+    max-width: 780px;
+
+    h1 {
+        font-size: 4.5em;
+    }
+
+    p {
+        max-width: 495px;
+        @include general(none, none, 100%, 1.15em, $grey, medium, $font);
+    }
+
+    .btn-warning {
+        @include general($orange, $border1, 100%, none, $white, medium, $font);
+    }
+
+    .btn-warning:hover {
+        @include general($orange1, $border2, 100%, none, $white, medium, $font);
+    }
+}
+
+@media (max-width: 576px) {
+    #ideal-coffee {
+        max-width: 100%;
+        text-align: center;
+
+        h1 {
+            font-size: 15vw;
+        }
+
+        .btn-warning {
+            @include center;
+        }
+    }
+
+    #best-coffee,
+    #barista {
+        text-align: center;
+
+        .under {
+            @include center;
+        }
+    }
+
+    #contact-us {
+        form {
+            input {
+                width: 85%;
+                padding-bottom: 100px;
+            }
+        }
+    }
+
+    footer {
+        #ddd {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+
+            #icons {
+                align-self: center;
+            }
+        }
+    }
+
+
+
+}
+
+// Header & Navbar END–––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// Best coffee & Barista section –––––––––––––––––––––––––––––––––––––––––––––––––––––
+#black1 {
+    background-color: $black1;
+}
+
+#best-coffee,
+#barista {
+    margin-left: 5.5%;
+
+    h4 {
+        @include general(none, none, 100%, 1.3em, $grey, bold, $font);
+    }
+
+    h1 {
+        @include general(none, none, 100%, 3.2em, $white, bold, $font);
+    }
+
+    p {
+        max-width: 542px;
+        @include general(none, none, 100%, 1.15em, $white, medium, $font);
+    }
+
+    .under {
+        border-bottom: $border;
+    }
+}
+
+#best-coffee {
+    .under {
+        width: 95px;
+    }
+}
+
+#barista {
+    margin-right: 5.4%;
+
+    .under {
+        width: 77px;
+    }
+}
+
+
+// Best coffee section END–––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// Coffee types section –––––––––––––––––––––––––––––––––––––––––––––––––––––
+#coffee-types,
+#videos {
+    margin-left: 5%;
+    margin-right: 5%;
+
+    #crahic {
+        background: url("../img/back11.png") no-repeat center center;
+        background-size: cover;
+    }
+
+    #essential {
+        background: url("../img/back22.png") no-repeat center center;
+        background-size: cover;
+    }
+
+    #marcony {
+        background: url("../img/back33.png") no-repeat center center;
+        background-size: cover;
+    }
+
+    #crahic,
+    #essential,
+    #marcony {
+        text-align: center;
+        max-width: 400px;
+
+        h6 {
+            @include general(none, none, 100%, 0.65em, $grey, bolder, $font);
+        }
+
+        h2 {
+            @include general(none, none, 100%, 1.7em, $white, bolder, $font);
+        }
+
+        p {
+            @include general(none, none, 100%, 0.9em, $white, medium, $font);
+        }
+    }
+}
+
+// Coffee types section END–––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// Contact us section –––––––––––––––––––––––––––––––––––––––––––––––––––––
+#contact-us {
+    form {
+        h2 {
+            font-size: 2em;
+        }
+
+        input {
+            @include general($black, none, 100%, 1em, $grey, medium, $font);
+            text-align: center;
+            padding-left: 25px;
+            border-bottom: 2px solid $grey;
+            padding-bottom: 5px;
+        }
+
+        i {
+            padding-bottom: 10px;
+            color: $orange;
+            border-bottom: 2px solid $grey;
+        }
+    }
+}
+
+// Contact us section END–––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// Footer–––––––––––––––––––––––––––––––––––––––––––––––––––––
+footer {
+    #ddd {
+        a {
+            color: $grey;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        p {
+            font-size: 0.7em;
+            color: $grey;
+        }
+
+        #icons {
+            a:hover {
+                color: $white;
+            }
+        }
+    }
+}
